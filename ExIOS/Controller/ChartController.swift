@@ -13,17 +13,26 @@ class ChartController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.getDataChart()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getDataChart(){
+        let apiService = ApiService(baseUrl: "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld")
+        apiService.apiRequestMet(methodType: .get) { responseJson, error in
+            
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: responseJson as Any)
+                let data = Data(jsonData)
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(ChartEncuestaResponse.self, from: data)
+                
+            } catch {
+                print("hubo un error", error)
+            }
+            
+            
+        }
     }
-    */
 
 }

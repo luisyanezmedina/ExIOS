@@ -15,6 +15,8 @@
 		978926D1279B7B81008E9CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978926D0279B7B81008E9CBC /* Assets.xcassets */; };
 		978926D4279B7B81008E9CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978926D2279B7B81008E9CBC /* LaunchScreen.storyboard */; };
 		978926FB279DF558008E9CBC /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FA279DF558008E9CBC /* ChartController.swift */; };
+		978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FD279DF7CE008E9CBC /* ApiService.swift */; };
+		97892701279E024E008E9CBC /* ChartEncuestaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		978926D3279B7B81008E9CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		978926D5279B7B81008E9CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978926FA279DF558008E9CBC /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
+		978926FD279DF7CE008E9CBC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEncuestaResponse.swift; sourceTree = "<group>"; };
 		ADA83D334C21D3D20F9939F5 /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
 		D31E191349554F20716527C1 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +86,8 @@
 		978926C6279B7B7D008E9CBC /* ExIOS */ = {
 			isa = PBXGroup;
 			children = (
+				978926FF279E018D008E9CBC /* Model */,
+				978926FC279DF759008E9CBC /* Services */,
 				978926F9279DF53C008E9CBC /* Controller */,
 				978926C7279B7B7D008E9CBC /* AppDelegate.swift */,
 				978926C9279B7B7D008E9CBC /* SceneDelegate.swift */,
@@ -100,6 +106,22 @@
 				978926FA279DF558008E9CBC /* ChartController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		978926FC279DF759008E9CBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				978926FD279DF7CE008E9CBC /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		978926FF279E018D008E9CBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				978926CC279B7B7D008E9CBC /* ViewController.swift in Sources */,
+				97892701279E024E008E9CBC /* ChartEncuestaResponse.swift in Sources */,
+				978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */,
 				978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */,
 				978926FB279DF558008E9CBC /* ChartController.swift in Sources */,
 				978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */,
