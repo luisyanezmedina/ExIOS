@@ -11,24 +11,24 @@ import Charts
 class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate {
   
     lazy var scrollView: UIScrollView = {
-            let scroll = UIScrollView()
-            scroll.translatesAutoresizingMaskIntoConstraints = false
-            scroll.delegate = self
-            // scroll.contentSize = CGSize(width: self.view.frame.size.width, height: 1000)
-            return scroll
-        }()
+        let scroll = UIScrollView()
+        scroll.translatesAutoresizingMaskIntoConstraints = false
+        scroll.delegate = self
+        
+        return scroll
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //self.pieChartOnePart.delegate = self
         view.addSubview(scrollView)
         
         self.getDataChart()
     }
     
 
+    /**
+    Get data from Web Service
+     */
     func getDataChart(){
         let apiService = ApiService(baseUrl: "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld")
         apiService.apiRequestMet(methodType: .get) { responseJson, error in
@@ -40,7 +40,7 @@ class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate
                 let model = try decoder.decode(ChartEncuestaResponse.self, from: data)
                 
                 for (index, question) in model.questions.enumerated() {
-                    self.configChartOnePart(valuesResponse: question.chartData, chartTitle: question.text, iteration: index)
+                    self.configChart(valuesResponse: question.chartData, chartTitle: question.text, iteration: index)
                 }
                 
             } catch {
@@ -50,9 +50,18 @@ class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate
         }
     }
     
-    func configChartOnePart(valuesResponse: [chartDatas], chartTitle: String, iteration: Int){
+    /**
+     Config current chart with values, colors and labels
+     */
+    func configChart(valuesResponse: [chartDatas], chartTitle: String, iteration: Int){
         var entries: [PieChartDataEntry] = Array()
         let pieChartInstance = PieChartView()
+        
+        let c1 = UIColor(rgb: 0xA11DF0)
+        let c2 = UIColor(rgb: 0x1D7BF0)
+        let c3 = UIColor(rgb: 0x6C1EFA)
+        let c4 = UIColor(rgb: 0x3627E3)
+        let c5 = UIColor(rgb: 0x1E46FA)
         
         for item in valuesResponse {
             entries.append(PieChartDataEntry(value: Double(item.percetnage), label: item.text))
@@ -61,13 +70,11 @@ class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate
         let dataSet = PieChartDataSet(entries: entries, label: chartTitle)
         pieChartInstance.data = PieChartData(dataSet: dataSet)
         
-        let c1 = UIColor(rgb: 0xE8bd54)
-        let c2 = UIColor(rgb: 0x4d3ca6)
         let height = self.view.frame.size.height * CGFloat(iteration)
-        dataSet.colors = [c1,c2]
+        dataSet.colors = [c1,c2,c3,c4,c5]
         pieChartInstance.frame = CGRect(x: 0, y: height , width: self.view.frame.size.width, height: self.view.frame.size.height)
-        //pieChartInstance.center = CGPoint(x: self.view.frame.size.width / 2, y: self.view.frame.size.height * CGFloat(iteration))
         scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: height)
+        
         scrollView.addSubview(pieChartInstance)
     }
     
