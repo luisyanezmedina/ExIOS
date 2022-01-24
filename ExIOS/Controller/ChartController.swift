@@ -7,6 +7,8 @@
 
 import UIKit
 import Charts
+import FirebaseDatabase
+
 
 class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate {
   
@@ -17,6 +19,9 @@ class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate
         
         return scroll
     }()
+    
+    private let db = Database.database().reference()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +35,20 @@ class ChartController: UIViewController, ChartViewDelegate, UIScrollViewDelegate
     Get data from Web Service
      */
     func getDataChart(){
+        
+        // Change UIView background color from Firebase
+        db.child("configuration").observeSingleEvent(of: .value){(snapshot) in
+            
+            guard let bgColor = snapshot.value as? [String: String] else {return}
+            var bgColorStr: String = "0x"
+            bgColorStr += bgColor["bgColor"]!
+          
+            guard let bgColorNumber = UInt32( String(bgColorStr.suffix(6) ), radix: 16 ) else {print("error en color firebase"); return}
+            
+            self.view.backgroundColor = UIColor(rgb: UInt(bgColorNumber) )
+            print("bgColor ", bgColorNumber)
+        }
+        
         let apiService = ApiService(baseUrl: "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld")
         apiService.apiRequestMet(methodType: .get) { responseJson, error in
             

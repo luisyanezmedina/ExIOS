@@ -17,12 +17,13 @@
 		978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FD279DF7CE008E9CBC /* ApiService.swift */; };
 		97892701279E024E008E9CBC /* ChartEncuestaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */; };
 		97892704279E1B27008E9CBC /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892703279E1B27008E9CBC /* ColorHex.swift */; };
-		9C77B7CD40CE31CC980C39F9 /* Pods_ExIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */; };
+		97892708279E39F8008E9CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97892707279E39F8008E9CBC /* GoogleService-Info.plist */; };
+		C4DFE38CC45CB767DF024412 /* Pods_ExIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D852B8E3990C5EBE394DA3C3 /* Pods_ExIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
+		63B8B9DC9694CBA259EBCEB4 /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6496D178FAAF3D827A79AB8E /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
 		978926C4279B7B7D008E9CBC /* ExIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978926C7279B7B7D008E9CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978926C9279B7B7D008E9CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +36,8 @@
 		978926FD279DF7CE008E9CBC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEncuestaResponse.swift; sourceTree = "<group>"; };
 		97892703279E1B27008E9CBC /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
-		97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97892707279E39F8008E9CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D852B8E3990C5EBE394DA3C3 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,18 +45,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C77B7CD40CE31CC980C39F9 /* Pods_ExIOS.framework in Frameworks */,
+				C4DFE38CC45CB767DF024412 /* Pods_ExIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0374F4E50B142981C90B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D852B8E3990C5EBE394DA3C3 /* Pods_ExIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80B91149EC90AE006A8FD831 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */,
-				8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */,
+				63B8B9DC9694CBA259EBCEB4 /* Pods-ExIOS.debug.xcconfig */,
+				6496D178FAAF3D827A79AB8E /* Pods-ExIOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -65,7 +75,7 @@
 				978926C6279B7B7D008E9CBC /* ExIOS */,
 				978926C5279B7B7D008E9CBC /* Products */,
 				80B91149EC90AE006A8FD831 /* Pods */,
-				FE106CB88A56A2E771EE9D47 /* Frameworks */,
+				0E0374F4E50B142981C90B0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +90,7 @@
 		978926C6279B7B7D008E9CBC /* ExIOS */ = {
 			isa = PBXGroup;
 			children = (
+				97892707279E39F8008E9CBC /* GoogleService-Info.plist */,
 				97892702279E1B13008E9CBC /* Extensions */,
 				978926FF279E018D008E9CBC /* Model */,
 				978926FC279DF759008E9CBC /* Services */,
@@ -127,14 +138,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FE106CB88A56A2E771EE9D47 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,11 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 978926D8279B7B81008E9CBC /* Build configuration list for PBXNativeTarget "ExIOS" */;
 			buildPhases = (
-				47666269BCC2099EC12B4D3D /* [CP] Check Pods Manifest.lock */,
+				705109707F11EB807499D617 /* [CP] Check Pods Manifest.lock */,
 				978926C0279B7B7D008E9CBC /* Sources */,
 				978926C1279B7B7D008E9CBC /* Frameworks */,
 				978926C2279B7B7D008E9CBC /* Resources */,
-				77F596515FF2FD8C1742301E /* [CP] Embed Pods Frameworks */,
+				6CD7A75C9056CB1723E66D40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				978926D4279B7B81008E9CBC /* LaunchScreen.storyboard in Resources */,
+				97892708279E39F8008E9CBC /* GoogleService-Info.plist in Resources */,
 				978926D1279B7B81008E9CBC /* Assets.xcassets in Resources */,
 				978926CF279B7B7D008E9CBC /* Main.storyboard in Resources */,
 			);
@@ -204,7 +208,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47666269BCC2099EC12B4D3D /* [CP] Check Pods Manifest.lock */ = {
+		6CD7A75C9056CB1723E66D40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		705109707F11EB807499D617 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,23 +245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77F596515FF2FD8C1742301E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -400,7 +404,7 @@
 		};
 		978926D9279B7B81008E9CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */;
+			baseConfigurationReference = 63B8B9DC9694CBA259EBCEB4 /* Pods-ExIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,7 +433,7 @@
 		};
 		978926DA279B7B81008E9CBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */;
+			baseConfigurationReference = 6496D178FAAF3D827A79AB8E /* Pods-ExIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

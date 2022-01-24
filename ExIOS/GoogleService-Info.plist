@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>391678507149-1af98bet0vrfc49he4l84sc7cqf753m9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.391678507149-1af98bet0vrfc49he4l84sc7cqf753m9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCg0Sg4LpuYCIk94liiL3aw33GY5UlC5M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>391678507149</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.joseluisyanez.ExIOS.</string>
+	<key>PROJECT_ID</key>
+	<string>exaios-a311f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>exaios-a311f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:391678507149:ios:762e8b8b4a93b4565fcac4</string>
+	<key>DATABASE_URL</key>
+	<string>https://exaios-a311f-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

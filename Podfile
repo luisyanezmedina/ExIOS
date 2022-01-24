@@ -9,5 +9,7 @@ target 'ExIOS' do
 
   pod 'Alamofire', '~> 5.5'
   pod 'Charts'
+  pod 'Firebase'
+  pod 'Firebase/Database'
   
 end
