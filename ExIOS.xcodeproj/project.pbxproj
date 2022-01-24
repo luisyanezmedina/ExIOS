@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3186A9EF2DF820754FD4E4BE /* Pods_ExIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31E191349554F20716527C1 /* Pods_ExIOS.framework */; };
 		978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C7279B7B7D008E9CBC /* AppDelegate.swift */; };
 		978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C9279B7B7D008E9CBC /* SceneDelegate.swift */; };
 		978926CC279B7B7D008E9CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926CB279B7B7D008E9CBC /* ViewController.swift */; };
@@ -17,10 +16,13 @@
 		978926FB279DF558008E9CBC /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FA279DF558008E9CBC /* ChartController.swift */; };
 		978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FD279DF7CE008E9CBC /* ApiService.swift */; };
 		97892701279E024E008E9CBC /* ChartEncuestaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */; };
+		97892704279E1B27008E9CBC /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892703279E1B27008E9CBC /* ColorHex.swift */; };
+		9C77B7CD40CE31CC980C39F9 /* Pods_ExIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		79152B99AFCBADB374DF06EC /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
 		978926C4279B7B7D008E9CBC /* ExIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978926C7279B7B7D008E9CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978926C9279B7B7D008E9CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +34,8 @@
 		978926FA279DF558008E9CBC /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		978926FD279DF7CE008E9CBC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEncuestaResponse.swift; sourceTree = "<group>"; };
-		ADA83D334C21D3D20F9939F5 /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
-		D31E191349554F20716527C1 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97892703279E1B27008E9CBC /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,26 +43,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3186A9EF2DF820754FD4E4BE /* Pods_ExIOS.framework in Frameworks */,
+				9C77B7CD40CE31CC980C39F9 /* Pods_ExIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53372CDA85D876D4845A440D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D31E191349554F20716527C1 /* Pods_ExIOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		80B91149EC90AE006A8FD831 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79152B99AFCBADB374DF06EC /* Pods-ExIOS.debug.xcconfig */,
-				ADA83D334C21D3D20F9939F5 /* Pods-ExIOS.release.xcconfig */,
+				0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */,
+				8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,7 +65,7 @@
 				978926C6279B7B7D008E9CBC /* ExIOS */,
 				978926C5279B7B7D008E9CBC /* Products */,
 				80B91149EC90AE006A8FD831 /* Pods */,
-				53372CDA85D876D4845A440D /* Frameworks */,
+				FE106CB88A56A2E771EE9D47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +80,7 @@
 		978926C6279B7B7D008E9CBC /* ExIOS */ = {
 			isa = PBXGroup;
 			children = (
+				97892702279E1B13008E9CBC /* Extensions */,
 				978926FF279E018D008E9CBC /* Model */,
 				978926FC279DF759008E9CBC /* Services */,
 				978926F9279DF53C008E9CBC /* Controller */,
@@ -124,6 +119,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		97892702279E1B13008E9CBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97892703279E1B27008E9CBC /* ColorHex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE106CB88A56A2E771EE9D47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97D2DF0F7FBD59F3486455A5 /* Pods_ExIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,11 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 978926D8279B7B81008E9CBC /* Build configuration list for PBXNativeTarget "ExIOS" */;
 			buildPhases = (
-				828C6D97D5E4F87476FD593C /* [CP] Check Pods Manifest.lock */,
+				47666269BCC2099EC12B4D3D /* [CP] Check Pods Manifest.lock */,
 				978926C0279B7B7D008E9CBC /* Sources */,
 				978926C1279B7B7D008E9CBC /* Frameworks */,
 				978926C2279B7B7D008E9CBC /* Resources */,
-				6D5BD4E7412BF1B1CDC53C2C /* [CP] Embed Pods Frameworks */,
+				77F596515FF2FD8C1742301E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,24 +204,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D5BD4E7412BF1B1CDC53C2C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		828C6D97D5E4F87476FD593C /* [CP] Check Pods Manifest.lock */ = {
+		47666269BCC2099EC12B4D3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,6 +226,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		77F596515FF2FD8C1742301E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExIOS/Pods-ExIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -244,6 +255,7 @@
 				978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */,
 				978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */,
 				978926FB279DF558008E9CBC /* ChartController.swift in Sources */,
+				97892704279E1B27008E9CBC /* ColorHex.swift in Sources */,
 				978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +400,7 @@
 		};
 		978926D9279B7B81008E9CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79152B99AFCBADB374DF06EC /* Pods-ExIOS.debug.xcconfig */;
+			baseConfigurationReference = 0E9C730E635C3989AA5C9BD6 /* Pods-ExIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -417,7 +429,7 @@
 		};
 		978926DA279B7B81008E9CBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADA83D334C21D3D20F9939F5 /* Pods-ExIOS.release.xcconfig */;
+			baseConfigurationReference = 8FC2A7CFE40E1BC7CB3E5190 /* Pods-ExIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

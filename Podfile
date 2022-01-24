@@ -8,5 +8,6 @@ target 'ExIOS' do
   # Pods for ExIOS
 
   pod 'Alamofire', '~> 5.5'
+  pod 'Charts'
   
 end
