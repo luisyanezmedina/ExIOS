@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         menuTable.delegate = self
         menuTable.dataSource = self
-        self.selfieImage = UIImage(named: "bg")
+        self.selfieImage = UIImage(named: "geek")
     }
     
     
@@ -48,6 +48,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 1 {
         
             let alert = UIAlertController(title: "Aviso", message: "Deseas tomar la selfie?", preferredStyle: UIAlertController.Style.alert)
@@ -61,13 +62,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }))
             alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.destructive, handler: nil))
 
-            // show the alert
             self.present(alert, animated: true, completion: nil)
         }
         if indexPath.row == 2 {
             performSegue(withIdentifier: "showCharts", sender: self)
         }
     }
+    
     
 }
 
