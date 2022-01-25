@@ -61,31 +61,3 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
-
-
-// Extension for selfie
-extension ViewController: SelfieDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
-    
-    func takeSelfieTapped() {
-        print("iamgen a tomar")
-        let picker = UIImagePickerController()
-        picker.sourceType = .camera
-        picker.delegate = self
-        present(picker, animated: true)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true)
-
-        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
-            print("No image found")
-            return
-        }
-    
-    }
-    
-}
