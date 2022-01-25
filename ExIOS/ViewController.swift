@@ -42,7 +42,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         var cell = UITableViewCell()
         
         if indexPath.row == 0 {
-            cell = menuTable.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
+            let celda = menuTable.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! NombreCell
+            celda.NombreTextField.delegate = self
+            return celda
+            
         } else if indexPath.row == 1 {
             cell = menuTable.dequeueReusableCell(withIdentifier: "menuCellSelfie", for: indexPath)
         }
@@ -60,4 +63,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+}
+
+extension ViewController: UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        do {
+            let regex = try NSRegularExpression(pattern: ".*[^A-Za-z].*", options: [])
+            if regex.firstMatch(in: string, options: [], range: NSMakeRange(0, string.count)) != nil {
+                return false
+            }
+        }
+        catch {
+            print("ERROR")
+        }
+        return true
+    }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97287D7A279F72980083EE9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97287D79279F72980083EE9F /* GoogleService-Info.plist */; };
+		97287D81279F85A00083EE9F /* NombreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97287D80279F85A00083EE9F /* NombreCell.swift */; };
 		978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C7279B7B7D008E9CBC /* AppDelegate.swift */; };
 		978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C9279B7B7D008E9CBC /* SceneDelegate.swift */; };
 		978926CC279B7B7D008E9CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926CB279B7B7D008E9CBC /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		63B8B9DC9694CBA259EBCEB4 /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6496D178FAAF3D827A79AB8E /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
 		97287D79279F72980083EE9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/IMG/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97287D80279F85A00083EE9F /* NombreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NombreCell.swift; sourceTree = "<group>"; };
 		978926C4279B7B7D008E9CBC /* ExIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978926C7279B7B7D008E9CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978926C9279B7B7D008E9CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		97287D7B279F73570083EE9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97287D80279F85A00083EE9F /* NombreCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */,
 				978926FB279DF558008E9CBC /* ChartController.swift in Sources */,
 				97892704279E1B27008E9CBC /* ColorHex.swift in Sources */,
+				97287D81279F85A00083EE9F /* NombreCell.swift in Sources */,
 				978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
