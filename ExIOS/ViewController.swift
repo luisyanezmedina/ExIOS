@@ -16,7 +16,21 @@ class ViewController: UIViewController {
         menuTable.delegate = self
         menuTable.dataSource = self
     }
+    
+    @IBAction func takeSelfieAction(_ sender: Any) {
+        self.configSelfieAlert()
+    }
+    
+    func configSelfieAlert() {
+        
+        let selfieNib = UINib(nibName: "Selfie", bundle: nil)
+        let viewSelfie = selfieNib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    
+        viewSelfie.frame = view.bounds
+        view.addSubview(viewSelfie)
 
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,6 +58,34 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 2 {
             performSegue(withIdentifier: "showCharts", sender: self)
         }
+    }
+    
+}
+
+
+// Extension for selfie
+extension ViewController: SelfieDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
+    
+    func takeSelfieTapped() {
+        print("iamgen a tomar")
+        let picker = UIImagePickerController()
+        picker.sourceType = .camera
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+    
     }
     
 }

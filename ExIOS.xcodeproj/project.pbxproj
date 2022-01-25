@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97287D7A279F72980083EE9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97287D79279F72980083EE9F /* GoogleService-Info.plist */; };
+		97287D7D279F73650083EE9F /* Selfie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97287D7C279F73650083EE9F /* Selfie.xib */; };
+		97287D7F279F73C30083EE9F /* Selfie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97287D7E279F73C30083EE9F /* Selfie.swift */; };
 		978926C8279B7B7D008E9CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C7279B7B7D008E9CBC /* AppDelegate.swift */; };
 		978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926C9279B7B7D008E9CBC /* SceneDelegate.swift */; };
 		978926CC279B7B7D008E9CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926CB279B7B7D008E9CBC /* ViewController.swift */; };
@@ -17,13 +20,15 @@
 		978926FE279DF7CE008E9CBC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978926FD279DF7CE008E9CBC /* ApiService.swift */; };
 		97892701279E024E008E9CBC /* ChartEncuestaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */; };
 		97892704279E1B27008E9CBC /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97892703279E1B27008E9CBC /* ColorHex.swift */; };
-		97892708279E39F8008E9CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97892707279E39F8008E9CBC /* GoogleService-Info.plist */; };
 		C4DFE38CC45CB767DF024412 /* Pods_ExIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D852B8E3990C5EBE394DA3C3 /* Pods_ExIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63B8B9DC9694CBA259EBCEB4 /* Pods-ExIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.debug.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6496D178FAAF3D827A79AB8E /* Pods-ExIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExIOS.release.xcconfig"; path = "Target Support Files/Pods-ExIOS/Pods-ExIOS.release.xcconfig"; sourceTree = "<group>"; };
+		97287D79279F72980083EE9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/IMG/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97287D7C279F73650083EE9F /* Selfie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Selfie.xib; sourceTree = "<group>"; };
+		97287D7E279F73C30083EE9F /* Selfie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selfie.swift; sourceTree = "<group>"; };
 		978926C4279B7B7D008E9CBC /* ExIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978926C7279B7B7D008E9CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978926C9279B7B7D008E9CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		978926FD279DF7CE008E9CBC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		97892700279E024D008E9CBC /* ChartEncuestaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEncuestaResponse.swift; sourceTree = "<group>"; };
 		97892703279E1B27008E9CBC /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
-		97892707279E39F8008E9CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D852B8E3990C5EBE394DA3C3 /* Pods_ExIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		97287D7B279F73570083EE9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97287D7C279F73650083EE9F /* Selfie.xib */,
+				97287D7E279F73C30083EE9F /* Selfie.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		978926BB279B7B7D008E9CBC = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +103,8 @@
 		978926C6279B7B7D008E9CBC /* ExIOS */ = {
 			isa = PBXGroup;
 			children = (
-				97892707279E39F8008E9CBC /* GoogleService-Info.plist */,
+				97287D7B279F73570083EE9F /* Views */,
+				97287D79279F72980083EE9F /* GoogleService-Info.plist */,
 				97892702279E1B13008E9CBC /* Extensions */,
 				978926FF279E018D008E9CBC /* Model */,
 				978926FC279DF759008E9CBC /* Services */,
@@ -199,7 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				978926D4279B7B81008E9CBC /* LaunchScreen.storyboard in Resources */,
-				97892708279E39F8008E9CBC /* GoogleService-Info.plist in Resources */,
+				97287D7A279F72980083EE9F /* GoogleService-Info.plist in Resources */,
+				97287D7D279F73650083EE9F /* Selfie.xib in Resources */,
 				978926D1279B7B81008E9CBC /* Assets.xcassets in Resources */,
 				978926CF279B7B7D008E9CBC /* Main.storyboard in Resources */,
 			);
@@ -261,6 +276,7 @@
 				978926FB279DF558008E9CBC /* ChartController.swift in Sources */,
 				97892704279E1B27008E9CBC /* ColorHex.swift in Sources */,
 				978926CA279B7B7D008E9CBC /* SceneDelegate.swift in Sources */,
+				97287D7F279F73C30083EE9F /* Selfie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
